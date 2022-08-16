@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension UIViewController {
+open class ConfigureLayout {
     
-    open static func configureLayout(spacingNum: Int, width: CGFloat, height: CGFloat, scrollDirct: UICollectionView.ScrollDirection, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat, minLineSpc: CGFloat, minIntSpc: CGFloat) {
+    public static func configureLayout(spacingNum: Int, width: CGFloat, height: CGFloat, scrollDirct: UICollectionView.ScrollDirection, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat, minLineSpc: CGFloat, minIntSpc: CGFloat) {
      
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = spacingNum
