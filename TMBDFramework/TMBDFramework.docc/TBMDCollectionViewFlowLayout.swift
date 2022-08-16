@@ -9,12 +9,7 @@ import UIKit
 
 extension UIViewController {
     
-    public enum ScrollDirection {
-        case horizontal
-        case vertical
-    }
-    
-    public static func configureLayout(spacingNum: Int, width: CGFloat, height: CGFloat, scrollDirct: ScrollDirection, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat, minLineSpc: CGFloat, minIntSpc: CGFloat) {
+    open static func configureLayout(spacingNum: Int, width: CGFloat, height: CGFloat, scrollDirct: UICollectionView.ScrollDirection, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat, minLineSpc: CGFloat, minIntSpc: CGFloat) {
      
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = spacingNum

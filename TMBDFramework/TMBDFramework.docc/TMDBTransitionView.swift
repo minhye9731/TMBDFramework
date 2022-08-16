@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIViewController {
+open class TransitionView {
     
     public enum TransitionStyle {
         case present

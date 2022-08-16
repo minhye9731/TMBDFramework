@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     
-    public func showAlert(title: String, message: String, buttonTitle: String, buttonAction: @escaping((UIAlertAction) -> Void)) {
+    open func showAlert(title: String, message: String, buttonTitle: String, buttonAction: @escaping((UIAlertAction) -> Void)) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let cancel = UIAlertAction(title: "취소", style: .cancel)
